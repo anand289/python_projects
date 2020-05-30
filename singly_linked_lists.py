@@ -1,3 +1,4 @@
+#10-->5-->6
 
 # myLL = {
 #   'head':{
@@ -50,6 +51,7 @@ class LL:
 
   def insert(self,index,value):
     if (index >= self.length):
+      print(f"Entered Index greater than the length. Adding element at the end." )
       return self.append(value)
     self.node = {
       'value': value,
@@ -61,6 +63,13 @@ class LL:
     self.node['next'] = holding_pointer
     self.length = self.length + 1
     return self.print_list()
+
+  def remove(self,index):
+    before = self.traverse_to_index(index-1)
+    after = self.traverse_to_index(index+1)
+    before['next'] = after
+    self.length = self.length + 1
+
 
 
 
@@ -82,10 +91,13 @@ myLL.prepend(6)
 myLL.append(5)
 myLL.prepend(6)
 myLL.insert(1,7)
-print(myLL.head)
-print(myLL.tail)
-print(myLL.length)
+myLL.insert(9,7)
+
+
 myLL.print_list()
+myLL.remove(2)
+myLL.print_list()
+
 
 
 
