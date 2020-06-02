@@ -62,15 +62,13 @@ class LL:
     leader['next'] = self.node
     self.node['next'] = holding_pointer
     self.length = self.length + 1
-    return self.print_list()
+  
 
   def remove(self,index):
     before = self.traverse_to_index(index-1)
     after = self.traverse_to_index(index+1)
     before['next'] = after
-    self.length = self.length + 1
-
-
+    self.length = self.length - 1
 
 
   def print_list(self):
@@ -81,21 +79,32 @@ class LL:
       current_node = current_node['next']
     return print(arr)
 
+  def reverse(self):
+   first = self.head
+   second = first['next']
+   while(second):
+     temp = second['next']
+     second['next'] = first
+     first = second
+     second = temp
+   self.head['next'] = None
+   self.head = first
+       
 
-
-
-
-myLL = LL(15)
+myLL = LL(10)
 myLL.append(5)
 myLL.prepend(6)
-myLL.append(5)
-myLL.prepend(6)
-myLL.insert(1,7)
-myLL.insert(9,7)
-
-
+myLL.append(3)
+myLL.prepend(2)
+myLL.print_list()
+myLL.insert(3,7)
 myLL.print_list()
 myLL.remove(2)
+myLL.print_list()
+# print(myLL.head)
+# print(myLL.tail)
+# print(myLL.length)
+myLL.reverse()
 myLL.print_list()
 
 
