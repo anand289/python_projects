@@ -1,2 +1,2 @@
 # My-Functions
-Some general functions encountered. 
+Some general functions. 
