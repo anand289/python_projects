@@ -1,0 +1,34 @@
+'''
+Excersise 1:
+    
+To iterate though elements: 
+    for i in list:
+
+To iterate through element numbers:
+ 	for i in range(0,len(list)): # if length is 5, will iterate from 0-->4
+     
+    for i in range(0,n): # if first element is 0, it will iterate n times, till n-1.
+        
+    range[l,r) # left element is included, right element is excluded. 
+          
+          
+To remove any element of a list in place:
+    list.pop(index)
+    
+Excersise 2:
+    
+    list2 = list1 
+    
+    both the lists starts sharing the same address. 
+    changing list1 will change list2, or visa-versa. 
+    use copy if don't want this
+    
+
+Excersice 3:
+    
+    recursive function --> think in terms of mathematical function. 
+    write fabonacci and factorial using recursive
+    python functions can manupilate variables defined outside then from inside the variable. 
+    copy lists to modify one independent of other. 
+    
+'''
