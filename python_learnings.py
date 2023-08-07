@@ -31,4 +31,9 @@ Excersice 3:
     python functions can manupilate variables defined outside then from inside the variable. 
     copy lists to modify one independent of other. 
     
+    
+Exercise 4: 
+    
+    sum(list[a:b]) produces sum of elements of the list from a to b. a included, b exclueded.
+    
 '''
