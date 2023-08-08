@@ -9,5 +9,5 @@ def find_profit(food_prices):
     return max_diff
 
 
-food_prices = [3,2,1]
+food_prices = [10,12,14,12,13,11,8,7,6,13,23,45,11,10]
 print(find_profit(food_prices))
