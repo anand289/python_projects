@@ -1,2 +1,2 @@
 # My-Functions
-Some general functions. 
+Python courses, and LeetCode practice questions. 
