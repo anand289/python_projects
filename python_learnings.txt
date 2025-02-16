@@ -12,7 +12,7 @@ To iterate through element numbers:
     range[l,r) # left element is included, right element is excluded. 
           
           
-To remove any element of a list in place:
+To remove any element of a list: pop will modify the original list
     list.pop(index)
     
 Excersise 2:
